@@ -1,0 +1,249 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.line1 ,.line2 ,.line3 ,.line4 ,.line5{
+	display: none;
+}
+#section1{
+	background:none;
+}
+.box ,.box0{
+		-webkit-transform:none ;
+	-moz-transform:none ;
+	-ms-transform:none ;
+	-o-transform:none ;
+	transform:none ;
+	}
+	.box ,.box0{
+position: relative;
+left: 0;
+top: 0;
+margin: 0;	
+}
+.rotate2, .rotate3, .rotate1{
+		-webkit-transform:none ;
+	-moz-transform:none ;
+	-ms-transform:none ;
+	-o-transform:none ;
+	transform:none ;
+	
+	}
+} 
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.center_header{
+padding-top:40px;}
+
+ .bot_header{
+	padding-top:30px;
+	padding-bottom: 0;
+}
+
+.rotate{
+	height: 100%;
+	padding: 0 ;
+}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.carousel-caption h2{
+	font-size:16px;
+}
+.center_header{
+	margin-top: 50px;
+}
+.footer{
+	padding: 0 100px;
+}
+	.navbar-default
+{
+		background-color: #1C2A38;
+	border:none;
+	position: fixed;
+	width: 100%;
+	z-index: 999999;
+	overflow: hidden;
+}
+	.nav{
+	padding: 0;
+	width: 100%;
+	text-align: left;
+}
+.nav li{
+width: 100%;
+}
+.navbar-toggle{
+	color:#fff;
+	background-color: transparent !important;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+.nav{
+
+}
+.navbar-toggle:hover{
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+}
+	/*Disable Animation on Mobile Devices*/
+	.wow {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a
+	{
+		color: #FFF;
+
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus
+	{
+		color: #FFF;
+		background-color: #2a3038;
+		
+	}
+}
+
+@media only screen and (max-width : 600px) {
+	
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.carousel-caption img{
+	display: none;
+}
+.footer{
+	padding: 0 50px;
+}
+.carousel-caption h2{
+	font-size:12px;
+}
+.carousel-caption p{
+	font-size:12px;
+}
+	h1{
+		font-size:30px;
+	}
+	h2{
+		font-size:18px;
+	}
+.btn{
+	width: 300px;
+letter-spacing:2px;}
+
+.why_us{
+	padding:0;}
+
+	.knowledge{
+		padding:0;
+		margin: 0;
+	}
+
+.explore h2{
+		width: 100%;
+		min-height: 50px;
+		padding:15px 5px;
+	}
+	.middle_explore{
+	padding-top: 0px;
+	
+}
+.footer{
+	text-align: center;
+	padding: 0;
+}
+.case{
+	padding:0;
+}
+.our_case{
+	margin-top: 0;
+	text-align: center;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	
+.rotate{
+	margin: 0;
+	padding: 0;
+}
+	.btn {
+		letter-spacing:none;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.explore1 h2{
+		width: 100%;
+		height: 100%;
+		letter-spacing:1px;
+	}
+	.rotate2, .rotate3, .rotate1{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 767px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+.navbar-default{
+	margin-left: 80px;
+}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+.navbar-default{
+	margin-left: 150px;
+}
+}
+@media only screen and (min-width : 1334px) {
+.navbar-default{
+	margin-left: 180px;
+}
+}
