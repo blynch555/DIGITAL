@@ -1,26 +1,10 @@
 $(document).ready(function() {
 
 
- /*
-<script type="text/javascript">
-		$(document).ready(function() {
-			var touch = $('.touch-menu_button');
-			var menu = $('.navi');	
-
-			&(touch).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle();
-
-			});
-			$(window).resize(function(){
-				var wid = $(window).width();
-				if(wid > 760 && menu.is(':hidden')) {
-					menu.removeAttr('style');
-				}
-			});
-		});	
-	</script>
-*/
+	$(".toggle-mnu").click(function () {
+		$(".main-mnu").slideToggle();
+		return false;
+	});
 	//Таймер обратного отсчета
 	//Документация: http://keith-wood.name/countdown.html
 	//<div class="countdown" date-time="2015-01-07"></div>
@@ -41,7 +25,7 @@ $(document).ready(function() {
 	}
 	*/
  
- $(".navbar a, .top").mPageScroll2id({
+ $(".main-mnu a, .top").mPageScroll2id({
   scrollSpeed: 900
 });
         
@@ -63,26 +47,6 @@ $(document).ready(function() {
 		});
 	});
 
-	//Каруселька
-	//Документация: http://owlgraphic.com/owlcarousel/
-	/*var owl = $(".carousel");
-	owl.owlCarousel({
-		items : 4
-	});
-	owl.on("mousewheel", ".owl-wrapper", function (e) {
-		if (e.deltaY > 0) {
-			owl.trigger("owl.prev");
-		} else {
-			owl.trigger("owl.next");
-		}
-		e.preventDefault();
-	});
-	$(".next_button").click(function(){
-		owl.trigger("owl.next");
-	});
-	$(".prev_button").click(function(){
-		owl.trigger("owl.prev");
-	});*/
 
 	//Кнопка "Наверх"
 	//Документация:
@@ -142,7 +106,7 @@ $(document).ready(function() {
 		return false;
 	});
 
-	//Chrome Smooth Scroll
+	// Chrome Smooth Scroll
 	try {
 		$.browserSelector();
 		if($("html").hasClass("chrome")) {
